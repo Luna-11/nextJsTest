@@ -1,31 +1,20 @@
-import type { Metadata } from "next";
-import { Playfair_Display, Dancing_Script } from "next/font/google";
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-playfair",
-});
-
-const dancing = Dancing_Script({
-  subsets: ["latin"],
-  variable: "--font-dancing",
-});
+// app/layout.tsx
+import './globals.css'; // Add this import at the top
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Valentine",
-  description: "Be my Valentine",
+  title: 'Your App',
+  description: 'Your description',
 };
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="en">
-      <body className={`${playfair.variable} ${dancing.variable}`}>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
