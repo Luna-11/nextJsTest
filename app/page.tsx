@@ -108,8 +108,8 @@ export default function HomePage() {
               position: 'absolute',
               bottom: '16%',
               right: '39%',
-              width: '180px', // Reduced from 240px
-              height: '180px', // Reduced from 240px
+              width: '180px', 
+              height: '180px', 
               background: 'none',
               border: 'none',
               cursor: 'pointer',
